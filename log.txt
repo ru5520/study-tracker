@@ -11,4 +11,58 @@ os.path.join(...)提取文件所在文件夹
 日期: 2026-03-24
 学习了2小时
 学习了['获取日期']
+Day 7 复盘
+
+今天我给 study-tracker 增加了日期功能。
+我学会了使用 datetime 获取当前日期，并写入日志文件。
+我知道了 strftime 可以控制日期格式。
+下一步我想做输入校验或者总学习时长统计。
+--------------------------------
+日期: 2026-03-24
+学习了2.0小时
+学习了['防止输入错误而报错']
+代码报错：
+Traceback (most recent call last):
+  File "d:\Projects\study-tracker\main.py", line 49, in <module>
+    main()
+    ~~~~^^
+  File "d:\Projects\study-tracker\main.py", line 43, in main
+    content, hours = get_study_info()
+                     ~~~~~~~~~~~~~~^^
+  File "d:\Projects\study-tracker\main.py", line 17, in get_study_info
+    hours = float(input("学了多少小时？").strip())
+            ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: 'ZBC'
+在ai辅助下成功快速纠错并修正
+Day 8 复盘
+
+今天我给 study-tracker 增加了输入校验。
+我学会了用 while True 让用户重新输入。
+我知道了 try/except 可以防止程序因为错误输入而崩掉。
+我还需要继续熟悉 float、break 和异常处理。
+--------------------------------
+日期: 2026-03-24
+学习了2.0小时
+学习了['读取学习时长并记录']
+--------------------------------
+日期: 2026-03-24
+学习了5.0小时
+学习了['不知道']
+--------------------------------
+日期: 2026-03-26
+学习了2.0小时
+学习了['测试']
+--------------------------------
+日期: 2026-03-26
+学习内容:
+- Python
+- Git
+- Linux
+学习时长: 2.0小时
+Day 10 复盘
+
+今天我让 study-tracker 支持了多个学习内容的输入。
+我学会了用 split 把字符串拆成列表，并用 strip 清理每一项。
+我知道了列表可以让保存的数据更清晰。
+下一步我想做菜单功能，或者查看历史记录。
 --------------------------------
